@@ -1,0 +1,7 @@
+#!/bin/bash
+
+read -p "filename: " filename
+echo "#!/bin/bash" >> $filename
+echo "" >> $filename
+echo "echo \"hello world!!\"" >> $filename
+chmod +x $filename

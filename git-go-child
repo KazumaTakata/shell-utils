@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+child_commit=$(git log --reverse  $(git rev-parse HEAD)..master | grep -m 1 "commit")
+git checkout ${child_commit:6:41}
+
+
